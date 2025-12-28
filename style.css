@@ -1,56 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
-  background: #020617;
+  background: radial-gradient(circle at top, #020617, #000);
   color: #e5e7eb;
 }
 
-header {
-  padding: 90px 20px;
-  text-align: center;
-  background: linear-gradient(135deg, #16a34a, #065f46);
+/* ================= HERO ================= */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #16a34a, #022c22);
+  position: relative;
+  overflow: hidden;
 }
 
-header h1 {
-  font-size: 3rem;
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(74,222,128,0.15), transparent 60%);
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
   margin-bottom: 10px;
 }
 
-header p {
+.hero p {
   font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+/* ================= BUTTONS ================= */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 25px;
-  padding: 14px 30px;
-  background: #22c55e;
-  color: #000;
-  text-decoration: none;
+  padding: 14px 28px;
+  border-radius: 30px;
   font-weight: bold;
-  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s ease;
 }
 
+.primary {
+  background: #22c55e;
+  color: #000;
+}
+
+.secondary {
+  background: #020617;
+  border: 2px solid #22c55e;
+  color: #22c55e;
+}
+
+.ghost {
+  background: transparent;
+  border: 2px dashed #4ade80;
+  color: #4ade80;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.05);
+}
+
+/* ================= SECTIONS ================= */
 section {
-  padding: 60px 10%;
+  padding: 70px 10%;
 }
 
 h2 {
   color: #4ade80;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
+/* ================= GLASS EFFECT ================= */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+/* ================= GRID ================= */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 25px;
 }
 
+/* ================= CARDS ================= */
 .card {
   background: #020617;
+  padding: 25px;
+  border-radius: 15px;
   border: 1px solid #14532d;
-  padding: 22px;
-  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(74,222,128,0.25);
+}
+
+.neon {
+  box-shadow: inset 0 0 10px rgba(34,197,94,0.15);
 }
 
 .card h3 {
@@ -61,10 +133,18 @@ ul {
   padding-left: 20px;
 }
 
+.projects li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-left: 3px solid #22c55e;
+}
+
+/* ================= LINKS ================= */
 a {
   color: #4ade80;
 }
 
+/* ================= FOOTER ================= */
 footer {
   text-align: center;
   padding: 25px;
