@@ -13,9 +13,9 @@ body {
 .hero {
   height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  background: radial-gradient(circle, #1a1a1a, #000);
+  justify-content: center;
+  background: radial-gradient(circle at top, #1a1a1a, #000);
 }
 
 .hero-content {
@@ -113,6 +113,12 @@ h2 {
 
 ul {
   padding-left: 20px;
+}
+
+.projects li {
+  margin-bottom: 10px;
+  border-left: 4px solid #facc15;
+  padding-left: 10px;
 }
 
 a {
