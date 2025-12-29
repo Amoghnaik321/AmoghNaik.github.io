@@ -1,116 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Amogh R Naik | Embedded R&D Engineer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">⚙</div>
-  <ul>
-    <li><a href="#expertise">Expertise</a></li>
-    <li><a href="#history">History</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
-
-<!-- HERO -->
-<header class="hero">
-
-  <div class="hero-layout">
-
-    <!-- LEFT SIDE -->
-    <div class="hero-left">
-
-      <div class="profile-pic">
-        <img src="profile.jpg" alt="Amogh R Naik">
-      </div>
-
-      <h1>Amogh R Naik</h1>
-      <p>Embedded Research and Development Engineer</p>
-
-      <div class="hero-buttons">
-        <a href="#contact" class="btn primary">Contact Me</a>
-        <a href="Amogh_R_Naik_Resume.pdf" class="btn secondary" download>Download Resume</a>
-        <a href="https://github.com/Amoghnaik321" target="_blank" class="btn ghost">GitHub</a>
-      </div>
-
+<h2 style="margin-top: 60px;"><i class="fas fa-microchip"></i> Strategic Projects</h2>
+<div class="grid">
+    
+    <div class="card project-card">
+        <div class="project-header">
+            <h3><i class="fas fa-terminal"></i> STM32 Custom Bootloader</h3>
+            <span class="status-badge">Completed</span>
+        </div>
+        <p><strong>Focus:</strong> Reliability & Firmware Updates</p>
+        <ul>
+            <li>Implemented a custom secondary bootloader for <strong>STM32 Cortex-M7</strong> using UART, I2C, and SPI.</li>
+            <li>Developed memory partitioning logic to ensure safe application jumping and flash memory management.</li>
+            <li>Integrated <strong>CRC verification</strong> to validate firmware integrity before execution.</li>
+        </ul>
+        <div class="tech-stack">
+            <span class="tech-tag">Cortex-M7</span>
+            <span class="tech-tag">Flash Drivers</span>
+            <span class="tech-tag">UART/SPI</span>
+        </div>
     </div>
 
-    <!-- RIGHT SIDE -->
-    <div class="hero-right">
-      <svg class="wave-svg" viewBox="0 0 1440 400" preserveAspectRatio="none">
-        <path
-          d="M0,200 C120,160 240,240 360,220
-             480,200 600,120 720,160
-             840,200 960,300 1080,260
-             1200,220 1320,160 1440,180"
-          fill="none"
-          stroke="#facc15"
-          stroke-width="2">
-          <animate attributeName="d"
-            dur="6s"
-            repeatCount="indefinite"
-            values="
-            M0,200 C120,160 240,240 360,220 480,200 600,120 720,160 840,200 960,300 1080,260 1200,220 1320,160 1440,180;
-            M0,220 C120,240 240,160 360,180 480,200 600,260 720,220 840,180 960,200 1080,220 1200,260 1320,200 1440,220;
-            M0,200 C120,160 240,240 360,220 480,200 600,120 720,160 840,200 960,300 1080,260 1200,220 1320,160 1440,180
-            "/>
-        </path>
-      </svg>
+    <div class="card project-card">
+        <div class="project-header" style="color: var(--accent-green);">
+            <h3><i class="fas fa-car-battery"></i> EV Powertrain Modelling</h3>
+            <span class="status-badge" style="border-color: var(--accent-green); color: var(--accent-green);">Active</span>
+        </div>
+        <p><strong>Focus:</strong> IIT Roorkee Certification</p>
+        <ul>
+            <li>Modelling electric car dynamics using <strong>MATLAB/Simulink</strong> Powertrain Blockset.</li>
+            <li>Simulating <strong>Lithium-ion battery</strong> discharge cycles and DC motor drive efficiency.</li>
+            <li>Analysis of CAN data frames for inter-module communication within the EV architecture.</li>
+        </ul>
+        <div class="tech-stack">
+            <span class="tech-tag">Simulink</span>
+            <span class="tech-tag">EV Design</span>
+            <span class="tech-tag">Battery Management</span>
+        </div>
     </div>
 
-  </div>
-
-</header>
-
-<!-- EXPERTISE -->
-<section id="expertise">
-  <h2>Expertise</h2>
-  <p>
-    Embedded Software Engineer with <strong>1.8+ years of experience</strong> in STM32 firmware,
-    communication protocols, PCB design, and real-time embedded systems.
-  </p>
-</section>
-
-<!-- HISTORY -->
-<section id="history" class="glass">
-  <h2>History</h2>
-  <ul>
-    <li><strong>R&D Embedded Engineer</strong> – Yuvipep (2024 – Present)</li>
-    <li><strong>Research Intern</strong> – HAL Bengaluru</li>
-  </ul>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <h2>Projects</h2>
-  <ul class="projects">
-    <li>CAN-Based Communication Module</li>
-    <li>STM32 Bootloader</li>
-    <li>IoT Monitoring System</li>
-    <li>Custom Control PCB</li>
-  </ul>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="glass">
-  <h2>Contact</h2>
-  <p>📍 Bengaluru, India</p>
-  <p>📧 amoghnaik321@gmail.com</p>
-  <p>📞 +91 8971904799</p>
-  <p>💻 <a href="https://github.com/Amoghnaik321" target="_blank">github.com/Amoghnaik321</a></p>
-</section>
-
-<footer>
-  © 2025 Amogh R Naik
-</footer>
-
-</body>
-</html>
+    <div class="card project-card">
+        <div class="project-header">
+            <h3><i class="fas fa-desktop"></i> Embedded HMI Interface</h3>
+            <span class="status-badge">Completed</span>
+        </div>
+        <p><strong>Focus:</strong> User Experience & Real-time Telemetry</p>
+        <ul>
+            <li>Designed a real-time dashboard for embedded systems monitoring sensor data.</li>
+            <li>Integrated <strong>HMI testing</strong> protocols to ensure low-latency response on display modules.</li>
+            <li>Collaborated on 3D CAD modeling (Fusion 360) for the physical enclosure of the interface.</li>
+        </ul>
+        <div class="tech-stack">
+            <span class="tech-tag">HMI Testing</span>
+            <span class="tech-tag">Fusion 360</span>
+            <span class="tech-tag">Python</span>
+        </div>
+    </div>
+</div>
